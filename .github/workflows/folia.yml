@@ -42,6 +42,7 @@ jobs:
       - name: clone folia repo
         run: |
           git clone https://github.com/PaperMC/Folia.git ~/folia
+          cd ~/folia
           git checkout 1e5e2154c9f88d788cecf0b9fcc77ece7d1f8663
           
       - name: applyPathches
