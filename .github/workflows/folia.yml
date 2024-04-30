@@ -54,6 +54,21 @@ jobs:
         run: |
           cd ~/folia
           ./gradlew createReobfBundlerJar
+      - name: dir all sh*t
+        run: |
+          cd ~/folia
+          dir
+          
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.3.3
+        with:
+    # Artifact name
+            name: yep # optional, default is artifact
+    # A file, directory or wildcard pattern that describes what to upload
+            path: 
+
+
+          
 
       # Get the date of the build
       #- name: Get date
